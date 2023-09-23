@@ -1,0 +1,15 @@
+@import "/src/assets/base/breakpoint";
+
+.List {
+  margin-top: 68px;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(423px, 1fr));
+  gap: 37px 40px;
+
+  @include mobile {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,23 @@
+@import "./assets/base/breakpoint";
+
+.Container {
+  max-width: 1350px;
+  padding: 0 var(--padding-desktop);
+  margin: 44px auto 77px;
+
+  @include mobile {
+    margin: 20px auto 30px;
+    max-width: 100%;
+    padding: 0 var(--padding-mobile);
+  }
+}
+
+.Title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @include mobile {
+    font-size: 38px;
+  }
+}

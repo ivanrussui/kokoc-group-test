@@ -1,0 +1,79 @@
+@import "/src/assets/base/breakpoint";
+
+.ListItem {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px 0 rgba(0, 161, 92, 0.15);
+  min-height: 591px;
+  overflow: hidden;
+
+  &__Img {
+    display: inline-block;
+    width: auto;
+    height: 269px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+
+.Description {
+  padding: 24px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @include mobile {
+    padding: 15px;
+  }
+
+  &__Name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+
+  &__Date {
+    display: inline-block;
+    margin-top: 2px;
+    color: var(--color-gray);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &__Text {
+    margin-top: 24px;
+    margin-bottom: 31px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+  &__Bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+  }
+
+  &__Author {
+    font-size: 16px;
+    color: var(--color-gray);
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &__Like {
+    cursor: pointer;
+  }
+}
