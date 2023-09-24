@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kokoc-group-test/static/css/main.ced95b87.css",
-    "main.js": "/kokoc-group-test/static/js/main.3f20260c.js",
+    "main.css": "/kokoc-group-test/static/css/main.76d31c10.css",
+    "main.js": "/kokoc-group-test/static/js/main.a82340e3.js",
     "static/js/787.aa31d596.chunk.js": "/kokoc-group-test/static/js/787.aa31d596.chunk.js",
     "static/media/Roboto-Medium.ttf": "/kokoc-group-test/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
     "static/media/Roboto-Regular.ttf": "/kokoc-group-test/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "index.html": "/kokoc-group-test/index.html",
-    "main.ced95b87.css.map": "/kokoc-group-test/static/css/main.ced95b87.css.map",
-    "main.3f20260c.js.map": "/kokoc-group-test/static/js/main.3f20260c.js.map",
+    "main.76d31c10.css.map": "/kokoc-group-test/static/css/main.76d31c10.css.map",
+    "main.a82340e3.js.map": "/kokoc-group-test/static/js/main.a82340e3.js.map",
     "787.aa31d596.chunk.js.map": "/kokoc-group-test/static/js/787.aa31d596.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ced95b87.css",
-    "static/js/main.3f20260c.js"
+    "static/css/main.76d31c10.css",
+    "static/js/main.a82340e3.js"
   ]
 }
