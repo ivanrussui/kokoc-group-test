@@ -1,5 +1,5 @@
-@import "src/assets/base/breakpoint";
-@import "src/assets/base/animation";
+@import "assets/base/breakpoint";
+@import "assets/base/animation";
 
 .Container {
   max-width: 1350px;
@@ -17,6 +17,7 @@
   font-size: 48px;
   font-weight: 400;
   line-height: 28px;
+
   &_Animation {
     animation: TitleAnimation .4s ease-in-out 1;
   }

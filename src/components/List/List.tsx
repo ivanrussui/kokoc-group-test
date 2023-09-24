@@ -14,7 +14,6 @@ export const List: React.FC<DataType> = () => {
             try {
                 const data = await fetchData();
                 setList(data);
-                console.log('data', data)
             } catch (error) {
                 console.log('Error:', error);
             }

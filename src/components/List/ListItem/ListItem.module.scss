@@ -3,15 +3,30 @@
 
 .ListItem {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
   border-radius: 20px;
   box-shadow: 0 4px 15px 0 rgba(0, 161, 92, 0.15);
   min-height: 591px;
   overflow: hidden;
+  transition: .3s ease-in;
+
+  &:hover {
+    transition: .3s ease-out;
+    box-shadow: 0 4px 15px 0 rgba(0, 161, 92, 0.30);
+    transform: translateY(-5px);
+  }
+
+  @include mobile {
+    min-height: unset;
+  }
 
   &_NewsAnimation {
     animation: NewsAnimation .3s ease-in-out 1;
+  }
+
+  &__Link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   &__Img {
@@ -50,6 +65,10 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   &__Text {
@@ -58,21 +77,14 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
-
-    &_Hidden {
-      display: -webkit-box;
-      -webkit-line-clamp: 6;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-
-      &:hover {
-        cursor: pointer;
-        animation: NewsAnimation .6s ease-in-out 1;
-      }
-    }
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
     @include mobile {
       margin-top: 20px;
+      font-size: 16px;
     }
   }
 
@@ -88,13 +100,5 @@
     color: var(--color-gray);
     font-weight: 400;
     line-height: 28px;
-  }
-
-  &__Like {
-    cursor: pointer;
-
-    &:hover {
-      animation: HeartBeatAnimation 1.3s ease 1;
-    }
   }
 }

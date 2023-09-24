@@ -14,11 +14,9 @@ function App() {
     const titleClassName = `${styles.Title} ${isShow && styles.Title_Animation}`;
 
     return (
-        <div className={styles.App}>
-            <div className={styles.Container}>
-                <h1 className={titleClassName}>Новости</h1>
-                <List/>
-            </div>
+        <div className={styles.Container}>
+            <h1 className={titleClassName}>Новости</h1>
+            <List/>
         </div>
     );
 }
