@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import {LikeEmpty} from "./Like/LikeEmpty";
 import {LikeFill} from "./Like/LikeFill";
 import {ItemType} from "./ItemType";
-import styles from './ListItem.module.scss';
 import {useAnimation} from "../../../helpers/useAnimation";
+import styles from './ListItem.module.scss';
 
 export const ListItem: React.FC<{ data: ItemType }> = ({ data }) => {
     const [like, setLike] = useState(data.voteStatus);

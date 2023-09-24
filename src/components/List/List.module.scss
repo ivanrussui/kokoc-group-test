@@ -8,6 +8,10 @@
   grid-template-columns: repeat(auto-fill, minmax(423px, 1fr));
   gap: 37px 40px;
 
+  @include tablet {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
   @include mobile {
     margin-top: 30px;
     grid-template-columns: 1fr;

@@ -29,7 +29,7 @@
   flex-direction: column;
   flex-grow: 1;
 
-  @include mobile {
+  @include tablet {
     padding: 15px;
   }
 

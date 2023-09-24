@@ -1,7 +1,7 @@
 import React from 'react';
 import {List} from "./components/List/List";
-import styles from './App.module.scss';
 import {useAnimation} from "./helpers/useAnimation";
+import styles from './App.module.scss';
 
 function App() {
 
