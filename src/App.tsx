@@ -1,19 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {List} from "./components/List/List";
 import styles from './App.module.scss';
+import {useAnimation} from "./helpers/useAnimation";
 
 function App() {
-    const [isShow, setShow] = useState(true);
 
-    useEffect(() => {
-        const animationTimeout = setTimeout(() => {
-            setShow(true);
-        }, 20);
-        return () => {
-            clearTimeout(animationTimeout);
-        };
-    }, []);
+    const animationParams = {
+        initialState: true,
+        duration: 500,
+    };
 
+    const isShow = useAnimation(animationParams);
     const titleClassName = `${styles.Title} ${isShow && styles.Title_Animation}`;
 
     return (

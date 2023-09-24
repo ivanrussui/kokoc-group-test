@@ -1,22 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {LikeEmpty} from "./Like/LikeEmpty";
 import {LikeFill} from "./Like/LikeFill";
 import {ItemType} from "./ItemType";
 import styles from './ListItem.module.scss';
+import {useAnimation} from "../../../helpers/useAnimation";
 
 export const ListItem: React.FC<{ data: ItemType }> = ({ data }) => {
     const [like, setLike] = useState(data.voteStatus);
     const [isHidden, setIsHidden] = useState(true);
-    const [isShow, setShow] = useState(true);
-
-    useEffect(() => {
-        const animationTimeout = setTimeout(() => {
-            setShow(true);
-    }, 20);
-        return () => {
-            clearTimeout(animationTimeout);
-        };
-    }, []);
 
     const toggleImage = () => {
         setLike(!like);
@@ -32,6 +23,12 @@ export const ListItem: React.FC<{ data: ItemType }> = ({ data }) => {
         setIsHidden(!isHidden);
     };
 
+    const animationParams = {
+        initialState: true,
+        duration: 500,
+    };
+
+    const isShow = useAnimation(animationParams);
     const textClassName = `${styles.Description__Text} ${isHidden && styles.Description__Text_Hidden}`;
     const itemClassName = `${styles.ListItem} ${isShow && styles.ListItem_NewsAnimation}`;
 
